@@ -1,0 +1,7 @@
+a  = "jai"
+#name is variable 
+
+print("The value of", a, "+" , 10, " is:",a+b)
+print("The value of", a, "-" , 10, " is:",a-b)
+print("The value of", a, "*" , 10, " is:",a*b)
+print("The value of", a, "/" , 10, " is:",a/b)
