@@ -1,0 +1,16 @@
+a = "jai kishan omar "
+print(len(a))
+print(a.upper())
+print(a. lower())
+a = "!!!!! jai kishan omar !!!! "
+print(a. rstrip("!"))
+print (a .replace(" jai kishan oamr" , "rakesh "))
+print(a. split(" "))
+name = "rakesh" 
+print (name.capitalize ())
+str1 = "welcome to the console !!!"
+print(len(str1))
+print(str1.center(60))
+str1 = "He's name is Ram. He is very honest"
+print(str1.find (" s"))
+print(str1.index("r"))
