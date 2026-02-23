@@ -1,0 +1,18 @@
+print("The price of apple is", 300)
+
+value = 300
+budget = 350
+
+if value <= budget:
+    print("We can buy this apple")
+else:
+    print("We can't buy this apple")
+    value = int(input("Enter apple price: "))
+    budget = int(input("Enter your budget: "))
+
+    if value < budget:
+        print("Apple sasti hai, hum 2 apple le sakte hain 🍎🍎")
+    elif value == budget:
+        print("Apple exact budget me hai, 1 apple le sakte hain 🍎")
+    else:
+        print("Apple mehngi hai, nahi le sakte ❌")
