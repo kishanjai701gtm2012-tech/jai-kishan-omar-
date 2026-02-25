@@ -1,0 +1,13 @@
+name = "jai kishan "
+for i in name: 
+    print(i)    
+    if( i =="i"):
+         print(" this is a special character")
+for k  in range(51 ):
+    print(k - -2 +3)
+    
+colour = [" red, blue, green, yellow, black"]
+for colour  in colour: 
+    print (colour )
+    for j in colour : 
+       print(j )
