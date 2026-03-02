@@ -1,0 +1,31 @@
+a = (input("Enter your name : "))
+print(a)
+print("how are you and what are you doing")
+name = "jai kishan "
+for i in name: 
+    print(i)    
+    if( i =="i"):
+         print(" this is a special character")
+for k  in range(51 ):
+    print(k - -2 +3)
+for b  in range(53 ):
+    print(b) 
+
+
+i =  int(input("enter  a number :"))
+print(i)
+while (i<57) :
+    i = int(input("Enter a number:"))
+    print(i)
+    i = i + 10
+else : 
+    print("done you are traped in loop ")
+
+for k in range (15) : 
+    if (k == 10) : 
+        print ("let's come out from the loop ")
+        continue 
+      
+    print("5 X", k,"=",  ( 5* k))
+    k = k = 1 
+    
