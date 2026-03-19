@@ -1,0 +1,25 @@
+def Calculateanswer(a, b):
+    mean = (a * b) / (a + b)
+    print(mean)
+
+
+def whoisgreater(a, b):
+    if a > b:
+        print("a is greater than b ")
+    elif a < b:
+        print("b is greater than a ")
+    else:
+        print(" a and b are  equal ")
+
+
+a = 6
+b = 12
+c = 24
+d = 5
+e = 10
+n = 8
+Calculateanswer(a, b)
+Calculateanswer(c, d)
+whoisgreater(a, b)
+whoisgreater(c, d)
+whoisgreater(n, e)
