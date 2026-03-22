@@ -1,0 +1,45 @@
+def annalays(name1, name2, name3, name4):
+  nums = [name1, name2, name3, name4]
+
+  greatest = max(nums)
+  smallest = min(nums)
+  # check all equal
+  if name1 == name2 == name3 == name4:
+      print("sab equal hain")
+      return
+
+  print("Greatest value is:", greatest)
+
+  # check kaun-kaun greatest hai
+  if name1 == greatest:
+      print("name1 is greatest")
+  if name2 == greatest:
+      print("name2 is greatest")
+  if name3 == greatest:
+      print("name3 is greatest")
+  if name4 == greatest:
+      print("name4 is greatest")
+
+
+  name1 = 6
+  name2 = 5
+  name3 = 4
+  name4 = 5
+  nums = [name1, name2, name3, name4]
+  
+  smallest = min(nums)
+  
+  print("smallest value is :",smallest )
+  if name1 == smallest : 
+    print("name1 is smallest")
+  if name2 == smallest : 
+   print("name2 is smallest")
+  if name3 == smallest : 
+   print("name3 is smallest")
+  if name4 == smallest : 
+   print("name4 is smallest")
+a = 39
+b = 76
+c = 47
+d = 87
+annalays (a,b,c,d ) 
