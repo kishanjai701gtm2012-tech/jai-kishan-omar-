@@ -1,0 +1,14 @@
+import random
+
+number = random.randint(1, 100)
+aattemps = 0 
+while True:
+   a = int(input("guess a number between 1 and 100 : "  )) 
+attempts += 1
+if number == a : 
+  print ("wow ,You have guessed right number ")
+elif  number > a : 
+  print ("to low ")
+else : print ("to high")
+
+print ("you have guessed in the real number in" ,attempts, "attempt " )
