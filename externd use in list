@@ -1,0 +1,18 @@
+l =[ 87,87,90,76,4,5]
+# print(l.pop(3))
+# l.sort(reverse  = True)
+# print(l)
+# # l.append(5)
+# # print(l)
+# # print(l.index(76))
+# l.reverse ()
+# print(l)
+# print(l.count(87))
+# print(l.pop(3))
+# print(l.index(4 and 5 ))
+m = l.copy()
+print(m)
+k = l + m 
+print(k)
+k.sort(reverse = False)
+print(k)
