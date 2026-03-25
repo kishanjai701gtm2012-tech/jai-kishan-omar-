@@ -1,0 +1,37 @@
+questions = [
+  "Q1: India ki capital kya hai?",
+  "Q2: 2 + 2 kitna hota hai?",
+  "Q3: Python kis type ki language hai?"
+]
+
+options = [
+  ("A. Delhi", "B. Mumbai", "C. Kolkata", "D. Chennai"),
+  ("A. 3", "B. 4", "C. 5", "D. 6"),
+  ("A. Low level", "B. High level", "C. Machine", "D. Assembly")
+]
+
+answers = ["A", "B", "B"]
+
+score = 0
+
+for i in range(len(questions)):
+  print(questions[i])
+
+  for option in options[i]:
+      print(option)
+
+  user_answer = input("Apna answer do (A/B/C/D): ").upper()
+
+  if user_answer == answers[i]:
+      print("✅ Sahi jawab!")
+      score += 1
+  else:
+      print("❌ Galat jawab!")
+      print("Sahi answer tha:", answers[i])
+      break
+
+print("Game khatam!")
+print("Tumhara score hai:", score)
+
+
+
