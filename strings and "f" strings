@@ -14,3 +14,12 @@ print(str1.center(60))
 str1 = "He's name is Ram. He is very honest"
 print(str1.find (" s"))
 print(str1.index("r"))
+ #we use the f string inplace of formate datatype 
+#okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+letter  = ("hello my  name is {} and i am from {}")
+country = "india" 
+name = "kishan"
+print(letter.format(name,country))
+print(f"hello my name is {name} and i am from {country }")
+value = 908.98789
+print(f"the value of apple is {value:.2f}")
