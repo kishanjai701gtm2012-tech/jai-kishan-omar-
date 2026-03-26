@@ -1,0 +1,107 @@
+ 1. Variable
+👉 Variable ek naam hota hai jisme hum data store karte hain taaki baad me use kar sakein.
+🔹 2. Data Types
+👉 Data types batate hain ki variable me kis type ka data hai.
+Integer → poore number
+Float → decimal number
+String → text / words
+🔹 3. Input
+👉 Input ka use user se data lene ke liye hota hai.
+🔹 4. Output
+👉 Output ka use result screen par dikhane ke liye hota hai.
+🔹 5. Type Casting
+👉 Ek data type ko doosre data type me convert karna type casting kehlata hai.
+🔹 6. Operators
+👉 Operators ka use operations (jaise addition, comparison) karne ke liye hota hai.
+Arithmetic → +, -, *, /
+Comparison → >, <, ==
+Logical → and, or
+🔹 7. If-Else
+👉 If-else ka use condition check karne ke liye hota hai aur uske basis par decision liya jata hai.
+🔹 8. Loop
+👉 Loop ka use kisi kaam ko baar-baar repeat karne ke liye hota hai.
+🔹 9. While Loop
+👉 While loop tab tak chalta hai jab tak condition true hoti hai.
+🔹 10. For Loop
+👉 For loop ka use fixed number of times ya sequence ke through loop chalane ke liye hota hai.
+🔹 11. Break
+👉 Break loop ko turant rok deta hai.
+🔹 12. Continue
+👉 Continue current iteration skip karke next iteration start kar deta hai.
+🔹 13. List
+👉 List ek collection hota hai jisme multiple values ek saath store ki ja sakti hain.
+🔹 14. Index
+👉 Index kisi list ya string ke element ka position hota hai (0 se start hota hai).
+15. Function
+👉 Function ek block of code hota hai jo ek specific kaam karta hai aur baar-baar use kiya ja sakta hai.
+🔹 16. Argument / Parameter
+👉 Function ko jo values di jati hain unhe arguments ya parameters kehte hain.
+🔹 17. Return
+👉 Return function ka result wapas bhejne ke liye use hota hai.
+🔹 18. Module
+👉 Module ek file hoti hai jisme pre-written code hota hai jo hum use kar sakte hain.
+🔹 19. Random Module
+👉 Random module ka use random values generate karne ke liye hota hai.
+🔹 20. String Methods
+👉 String methods special functions hote hain jo string par operations karte hain (jaise check, convert, etc.)
+🧠 Golden Line
+👉 “Programming = Input + Logic + Output”
+1. f-string
+👉 f-string ka use string ke andar variables ko easily include karne ke liye hota hai.
+👉 Isme {} ke andar variable likhte hain aur value automatically aa jaati hai.
+👉 Ye normal string formatting se fast aur readable hota hai.
+🔹 2. List (Detail)
+👉 List ek ordered collection hota hai jisme multiple values store hoti hain.
+👉 List mutable hoti hai (change ho sakti hai).
+🔹 3. append()
+👉 append() ka use list ke end me ek nayi value add karne ke liye hota hai.
+🔹 4. insert()
+👉 insert() ka use kisi specific position par value add karne ke liye hota hai.
+🔹 5. remove()
+👉 remove() ka use kisi specific value ko list se delete karne ke liye hota hai.
+🔹 6. pop()
+👉 pop() ka use last element ko remove karne ke liye hota hai
+👉 Ya index dekar specific element bhi remove kar sakte hain.
+🔹 7. sort()
+👉 sort() list ke elements ko ascending (chhote se bade) order me arrange karta hai.
+🔹 8. reverse()
+👉 reverse() list ke order ko ulta kar deta hai.
+🔹 9. len()
+👉 len() ka use list ya string ki length (kitne elements hain) pata karne ke liye hota hai.
+🔹 10. in keyword
+👉 in ka use check karne ke liye hota hai ki koi value list me present hai ya nahi.
+🔹 11. Tuple
+👉 Tuple bhi list jaisa hota hai
+👉 Par ye immutable hota hai (change nahi hota)
+🔹 12. Dictionary (Basic idea)
+👉 Dictionary key-value pair me data store karta hai.
+👉 Example idea:
+name → Jai
+age → 17
+👉 Fast access ke liye use hota hai
+🔹 13. items()
+👉 items() dictionary ke andar ke sabhi key-value pairs ko ek saath access karne ke liye use hota hai.
+🔹 14. keys()
+👉 keys() dictionary ki saari keys return karta hai.
+🔹 15. values()
+👉 values() dictionary ki saari values return karta hai.
+🧠 Extra Important Concepts
+🔹 Mutable vs Immutable
+👉 Mutable:
+change ho sakta hai (List)
+👉 Immutable:
+change nahi hota (String, Tuple)
+🔹 Indexing
+👉 Har element ka position hota hai
+👉 Index 0 se start hota hai
+🔹 Slicing (Basic idea)
+👉 List ya string ka chhota part nikalna slicing kehlata hai.
+🎯 Super Short Revision Trick
+👉 Yaad rakh:
+append → add
+remove → delete
+pop → last delete
+sort → arrange
+reverse → ulta
+💪 Final Line
+👉 “List + Loop + Condition = 80% Python power 🔥”
