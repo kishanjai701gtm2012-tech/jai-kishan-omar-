@@ -1,0 +1,32 @@
+n = input("Enter your notes(type 'done' to finish)")
+notes = [n]
+print("these are your notes", notes)
+while n != "done":
+    n = input("Enter your notes(type 'done' to finish)")
+    notes.append(n)
+    print(notes)
+print("add notes")
+a = input("type yes to add notes")
+if a == "yes":
+    n = input("Enter your notes(type 'done' to finish)")
+    notes.append(n)
+    print(notes)
+else:
+    print("thank you ")
+print("view notes")
+b = input("type yes to view notes")
+if b == "yes":
+    print(notes)
+else:
+    print("thank you")
+print("delete notes")
+c = input("type yes to delete notes")
+if c == "yes":
+    print("are you sure you want to delete notes")
+    c1 = input("type yes to delete notes")
+    if c1 == "yes":
+        notes.pop()
+    else:
+        print("you saved your notes")
+else:
+    print(notes)
