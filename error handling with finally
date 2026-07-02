@@ -1,0 +1,21 @@
+def func1():
+    try:
+        l = [4, 6, 8]
+        m = [7, 9, 9, 3]
+        i = int(input("enter the index "))
+        print(l[i])
+        return 1
+
+    except:
+        print("some error occured")
+        return 0
+
+    finally:
+        print("i am always executed")
+
+
+x = func1()
+
+print(x)
+
+# we use finally because it is alwyas executed in the program with function so we use finally.
