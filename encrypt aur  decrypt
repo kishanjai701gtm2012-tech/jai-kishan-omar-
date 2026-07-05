@@ -1,0 +1,22 @@
+
+work = input("what do you want encrupt or decrypt?")
+front = "abc"
+back = "xyz"
+if work == "encrupt":
+    a = input("Enter your word ")
+    if len(a) <= 3 : 
+        print(a[::-1])
+    else :
+        print(front+a[1:]+a[0]+back )
+elif work ==  "decrypt":        
+    x = input("Enter your word ")
+    
+    if len(x) <= 3:
+        print(x[::-1])
+    else:
+        b = x[3:]
+        c= b[:-3]
+        d= c[-1 ] + c[:-1]
+        print(d )
+else : 
+    print("invaild input")
