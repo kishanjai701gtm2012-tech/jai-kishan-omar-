@@ -134,3 +134,40 @@ b = int(a)
 ## 🚀 Pro Tip
 
 Practice daily. Code likhna zaroori hai.
+Ab slicing
+
+example  ke saht 
+1. Pehla letter
+word[0]
+Output:
+k
+
+2. Last letter
+word[-1]
+Output:
+n
+
+
+3. Pehle letter ke baad sab
+word[1:]
+Output:
+ishan
+
+
+4. Last letter ko chhodkar sab
+word[:-1]
+Output:
+kisha
+
+
+5. Reverse
+word[::-1]
+Output:
+nahsik
+Ab tumhari exercise ka hint
+
+Agar "kishan" ko badalna hai aur pehla letter last me bhejna hai, to:
+
+word[1:] + word[0]
+
+Socho iska ou
