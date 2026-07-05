@@ -1,0 +1,12 @@
+# marks = [56,356,34,24,43,66,32]
+# index = 0 
+# for mark in  (marks):
+#    print(mark)
+#    if mark ==  356: print("this is to high ")
+
+marks = [56,356,34,24,43,66,32]
+
+for index , mark in enumerate  (marks):
+   print(mark)
+   if mark ==  356: print("this is to high ")
+
