@@ -1,0 +1,9 @@
+students = []
+n= int(input("hOW MANY STUDDENTS ?"))
+for i in range (n) :
+  name = (input("enter the name of student:"))
+  
+  students.append(name)
+
+for i , student in enumerate(students):
+  print(i +1 , student)
