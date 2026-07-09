@@ -1,0 +1,6 @@
+a = int(input("Enter the radius of the circle:"))
+import math 
+def area_of_circle(radius):
+    area = (math.pi * radius * radius) 
+    print(area )
+area_of_circle (a)
