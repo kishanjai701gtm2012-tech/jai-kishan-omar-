@@ -1,0 +1,21 @@
+import random
+
+a = random.randint(1, 10)
+won = False
+for i in range(3):
+    b = int(input("guess the number between 1 to 10"))
+    if a == b:
+        print("you won ")
+        won = True 
+        break
+    else:
+        if a > b:
+          print("too low")
+        elif  a< b : 
+          print("too high")
+          
+        print("you lost")
+        continue
+
+if won == False :
+  print("game over ,you lost the game the number was",a)
