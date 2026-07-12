@@ -1,0 +1,22 @@
+print("menu ")
+print("""1. write note
+2. read note 
+3. add note 
+4. exit """)
+while True:
+  a = input("enter your choice")
+  if a == "write note":
+     f = open('main.txt','w')
+     f.write(input("enter your note"))
+     f.close()
+  elif a == "read note":
+     f = open('main,txt','r')
+     text = f.read()
+     print(text)
+     f.close()
+  elif a ==  "add note":
+    f = open('main.txt','a')
+    f.write(input("enter your note"))
+    f.close()
+  elif a== "exit":
+    break
