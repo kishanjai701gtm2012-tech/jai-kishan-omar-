@@ -1,0 +1,37 @@
+print('''1. add student 
+2. show all students
+3. search student
+4. remove student
+5. exit''')
+students= []
+while True :
+  a = input("enter your choice : ")
+  if a == "add student":
+    b = input("enter student name:")   
+    students.append(b)
+    print(students)
+  elif a == "show all students":
+    if len(students) == 0: 
+      print("no students")
+    else: 
+      for index, student in enumerate(students):
+        print( index +1 ,student,   )
+  elif a == "search student":
+    c = input("Enter the student name to search : ")
+    if c in students:
+      print(c,"is present in the list ")
+    else: 
+      print(c ,"is not present in the list")
+  elif a == "remove student" : 
+    d = input("enter the name of student to remove :")
+    if d in students: 
+       students.remove(d)
+       print(d,"is removed from the list")
+    else: 
+      print(d,"is not present in the list ")
+  elif a == "exit": 
+   break
+  else: 
+    print("invailid choice ")
+    continue 
+      
