@@ -1,0 +1,17 @@
+from pickle import HIGHEST_PROTOCOL
+mark = [ 45,67,89,78,90,78,56,33,56]
+print("""orignal marks are:
+""" , mark)
+passed= lambda x :  x>50 
+passed_students = list(filter(passed,mark))
+
+print(passed_students)
+from functools import reduce
+total = lambda x,y : x+y
+totalmarks = (reduce(total,mark))
+print(totalmarks,"is totalmarks")
+highest = max(mark)
+print(highest,"is highest marks")
+grace = lambda x: x+5
+grace_marks = list(map(grace,mark))
+print(grace_marks,"is grace marks")
