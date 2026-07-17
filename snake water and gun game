@@ -1,0 +1,34 @@
+import random
+m = ["snake", "water", "gun"]
+
+while True:
+    user = input("would you want to play a game? (yes/no)")
+    if user == "yes":
+        print("okay lets play ")
+        while True:
+            user_choice = input("choose snake ,water or gun or exit ").lower()
+            
+
+            computer_choice = random.choice(m)
+            print("computer choice is ", computer_choice)
+            if user_choice == computer_choice:
+                print("its a tie")
+            elif user_choice == "snake" and computer_choice == "water":
+                print("you win")
+            elif user_choice == "snake" and computer_choice == "gun":
+                print("you lose")
+            elif user_choice == "water" and computer_choice == "snake":
+                print("you lose")
+            elif user_choice == "water" and computer_choice == "gun":
+                print("you win")
+            elif user_choice == "gun" and computer_choice == "snake":
+                print("you win")
+            elif user_choice == "gun" and computer_choice == "water":
+                print("you lose")
+            elif user_choice == "exit":
+                print("thanks for playing")
+                break 
+            else:
+                print("invailid choice ")
+    else:
+          print("invailid input")
