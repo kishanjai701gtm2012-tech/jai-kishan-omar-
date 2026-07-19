@@ -1,12 +1,12 @@
 import random
 
-a = ["abc", "bfg", "bgs", "ghn", "ghs", "bgs", "fgb"]
-y = ["abc", "bfg", "bgs", "ghn", "ghs", "bgs", "fgb"]
+a = ["abc", "bfg", "bgs", "ghn", "phs", "bgs", "fgb"]
+y = ["avc", "bvg", "mgs", "hhn", "ghs", "zgs", "pgb"]
 a1 = random.choice(a)
 a2 = random.choice(y)
 while True:
-    work = input("encrupt aur decrupt: ")
-    if work == "encrupt".lower():
+    work = input("encrypt aur decrypt: ")
+    if work == "encrypt".lower():
         nword = []
         m = input("enter your message: ")
         words = m.split(" ")
@@ -18,7 +18,7 @@ while True:
               nword.append(word[::-1])
 
         print(" ".join(nword))
-    elif  work == "decrupt".lower()  :
+    elif  work == "decrypt".lower()  :
        nword = []
        m = input("enter your message: ")
        words = m.split(" ")
