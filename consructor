@@ -1,0 +1,9 @@
+class student : 
+  def __init__(self, name, section , rollnumber) :
+    self.name= name
+    self.section =section
+    self. rollnumber = rollnumber
+  def info (self ):
+    print(f"my name is {self.name} and my section is {self.section} and my roll number is {self.rollnumber}")
+a = student("jai kishan ", 'A', "1")
+a.info()
