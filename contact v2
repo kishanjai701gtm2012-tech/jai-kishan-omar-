@@ -1,0 +1,34 @@
+contact = {}
+print(""" there are many options for you welcome to my contact :
+1. Add contact 
+2. search contact 
+3. delete contact
+4. show all contact 
+5. exit """)
+while True:
+    choice = input("enter your choice: ")
+    if choice == "1":
+        name = input("enter your name: ")
+        number = input("enter your number: ")
+        contact.update({name: number})
+        print("contact aded successfully")
+    elif choice == "2":
+        name = input("Enter name or number: ")
+
+        number = contact.get(name)
+
+        name = contact.get(number)
+
+    elif choice == "3":
+        name = input("enter your name ; ")
+        if name in contact:
+            contact.pop(name)
+            print("contact deleted successfully")
+        else:
+            print("it's ok name in not in contact ")
+    elif choice == "4":
+        print(contact)
+    elif choice == "5 ":
+        break
+    else:
+        print("invaid choice ")
