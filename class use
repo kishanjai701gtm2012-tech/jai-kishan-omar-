@@ -1,0 +1,13 @@
+class Mobile: 
+  def __init__(self, brand ,model , price ):
+    print("this is mobile phone ")
+    self.brand = brand 
+    self.model= model 
+    self.price= price 
+  def  get_price (self):
+    print("price of mobile is ",self.price)
+    print("model of mobile is ",self.model)
+    print("brand of mobile is ",self.brand)
+
+mob1 = Mobile("motorola", "g65" , 25000)
+mob1.get_price()
