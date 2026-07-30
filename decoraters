@@ -1,0 +1,23 @@
+def greet (fx): 
+  def mfx(*args, **kwargs):
+    print("nice to meet you ")
+    fx(*args, **kwargs)
+    print("thanks for using  this ")
+  return mfx 
+@greet 
+def hello():
+    print("hello world")
+hello()
+  
+
+def smart (fx): 
+  def mfx (*args, **kwargs):
+    print("programm is started ")
+    fx (*args, **kwargs)
+    print("programm is finished ")
+  return mfx 
+@smart 
+def add (a,b): 
+  print(a+b)
+
+add(14, 16)
