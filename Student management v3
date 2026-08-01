@@ -1,0 +1,40 @@
+print("""  welcome to my student management system : 
+1. add student : 
+2. show student : 
+3. exit """)
+
+d_student = []
+class student_management : 
+  def __init__ (self, name, roll_number, mark ):
+   self.name = name 
+   self. roll_number = roll_number 
+   self. mark = mark 
+  def show(self):
+    return ( f"name is {self.name}  roll number is {self. roll_number } mark is  {self. mark}")
+    
+    
+    
+    
+    
+while True :
+  choice = int(input("Enter your choice : "))
+  if choice == 1 : 
+    name = input("enter student name : ")
+    roll_number = input("enter student roll number : ")
+    mark = input ("enter the mark of student ")
+  
+    data= student_management( name, roll_number, mark )
+    d_student.append(data)
+  elif choice == 2 :
+    for student in d_student : 
+      print(student.show())
+  elif choice == 3:
+    break 
+  else: 
+    print("invalid input")
+    
+     
+  
+    
+    
+  
