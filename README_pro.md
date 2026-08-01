@@ -1236,4 +1236,750 @@ In the next topic, we'll understand:
 - Interview questions and examples
 
     def show(self):
-        print(self.name, self.marks)
+        print(self.name, self.marks)# 🐍 Python Master Notes
+
+# 👤 Topic 4 : `self` Keyword
+
+> **`self` is a reference to the current object of a class. It allows an object to access its own variables and methods.**
+
+---
+
+# 📖 What is `self`?
+
+`self` is the first parameter of every **instance method** in a class.
+
+It represents **the current object** that is calling the method.
+
+When an object calls a method, Python automatically passes that object as the first argument.
+
+---
+
+# 🤔 Why Do We Use `self`?
+
+Without `self`, Python cannot identify which object's data should be used.
+
+Example:
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+Here,
+
+- `self.name` → Variable inside the object
+- `name` → Value received from the user
+
+---
+
+# 📌 Syntax
+
+```python
+class ClassName:
+
+    def method(self):
+        pass
+```
+
+---
+
+# ✅ Example 1
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print(self.name)
+
+s1 = Student("Jai")
+
+s1.show()
+```
+
+### Output
+
+```
+Jai
+```
+
+---
+
+# ✅ Example 2
+
+```python
+class Car:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print(self.brand, "Started")
+
+c1 = Car("BMW")
+
+c1.start()
+```
+
+### Output
+
+```
+BMW Started
+```
+
+---
+
+# 🔍 How Python Works Internally
+
+When you write:
+
+```python
+s1.show()
+```
+
+Python internally does this:
+
+```python
+Student.show(s1)
+```
+
+So, `self` automatically becomes `s1`.
+
+---
+
+# 📌 Multiple Objects Example
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print(self.name)
+
+s1 = Student("Jai")
+s2 = Student("Rahul")
+
+s1.show()
+s2.show()
+```
+
+### Output
+
+```
+Jai
+Rahul
+```
+
+Each object has its own data.
+
+---
+
+# 📌 Accessing Variables Using `self`
+
+```python
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def details(self):
+        print(self.name)
+        print(self.salary)
+
+e1 = Employee("Amit", 50000)
+
+e1.details()
+```
+
+---
+
+# ❌ Without `self`
+
+```python
+class Student:
+
+    def __init__(self, name):
+        name = name
+```
+
+This does **not** create an object attribute.
+
+Correct:
+
+```python
+self.name = name
+```
+
+---
+
+# 📌 Accessing Methods Using `self`
+
+A method can call another method using `self`.
+
+```python
+class Demo:
+
+    def hello(self):
+        print("Hello")
+
+    def welcome(self):
+        self.hello()
+        print("Welcome")
+
+d = Demo()
+
+d.welcome()
+```
+
+### Output
+
+```
+Hello
+Welcome
+```
+
+---
+
+# 📌 Can We Use Another Name Instead of `self`?
+
+Yes.
+
+```python
+class Demo:
+
+    def __init__(myobject):
+        print("Hello")
+```
+
+This code works.
+
+But according to Python conventions (**PEP 8**), always use **`self`**.
+
+---
+
+# ❌ Common Mistakes
+
+### Mistake 1
+
+```python
+class Student:
+
+    def show():
+        print("Hello")
+```
+
+Correct
+
+```python
+class Student:
+
+    def show(self):
+        print("Hello")
+```
+
+---
+
+### Mistake 2
+
+```python
+name = name
+```
+
+Correct
+
+```python
+self.name = name
+```
+
+---
+
+### Mistake 3
+
+Trying to access object variables without `self`.
+
+Wrong
+
+```python
+print(name)
+```
+
+Correct
+
+```python
+print(self.name)
+```
+
+---
+
+# 💡 Interview Questions
+
+### Q1. What is `self`?
+
+`self` is a reference to the current object of a class.
+
+---
+
+### Q2. Is `self` a keyword?
+
+❌ No.
+
+It is **not** a Python keyword.
+
+It is only a naming convention.
+
+---
+
+### Q3. Who passes `self`?
+
+Python automatically passes the current object when a method is called.
+
+---
+
+### Q4. Can we change the name of `self`?
+
+Yes, but it is not recommended.
+
+Always use `self` for readability.
+
+---
+
+# 🏋 Practice Programs
+
+### Beginner
+
+- Student Class
+- Car Class
+- Mobile Class
+
+### Intermediate
+
+- Employee Details
+- Bank Account
+- Library Book Class
+
+### Advanced
+
+- School Management System
+- Hospital Management System
+- ATM Simulation
+
+---
+
+# 📝 Quick Revision
+
+- `self` refers to the current object.
+- It is the first parameter of instance methods.
+- Python passes `self` automatically.
+- Use `self.variable` to create object attributes.
+- Use `self.method()` to call another method in the same class.
+- `self` is **not** a keyword; it is a convention.
+
+---
+
+# 🧠 Key Takeaway
+
+Whenever you see:
+
+```python
+self.name = name
+```
+
+Remember:
+
+- Left side (`self.name`) → Object attribute
+- Right side (`name`) → Value passed by the user
+
+---
+
+# 🚀 What's Next?
+
+📌 **Topic 5 : Instance Variables & Class Variables**
+
+In the next topic, you'll learn:
+- Instance Variables
+- Class Variables
+- Difference between them
+- Real-world examples
+- Common mistakes
+- Interview questions
+
+- # 🐍 Python Master Notes
+
+# 👤 Topic 4 : `self` Keyword
+
+> **`self` is a reference to the current object of a class. It allows an object to access its own variables and methods.**
+
+---
+
+# 📖 What is `self`?
+
+`self` is the first parameter of every **instance method** in a class.
+
+It represents **the current object** that is calling the method.
+
+When an object calls a method, Python automatically passes that object as the first argument.
+
+---
+
+# 🤔 Why Do We Use `self`?
+
+Without `self`, Python cannot identify which object's data should be used.
+
+Example:
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+Here,
+
+- `self.name` → Variable inside the object
+- `name` → Value received from the user
+
+---
+
+# 📌 Syntax
+
+```python
+class ClassName:
+
+    def method(self):
+        pass
+```
+
+---
+
+# ✅ Example 1
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print(self.name)
+
+s1 = Student("Jai")
+
+s1.show()
+```
+
+### Output
+
+```
+Jai
+```
+
+---
+
+# ✅ Example 2
+
+```python
+class Car:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print(self.brand, "Started")
+
+c1 = Car("BMW")
+
+c1.start()
+```
+
+### Output
+
+```
+BMW Started
+```
+
+---
+
+# 🔍 How Python Works Internally
+
+When you write:
+
+```python
+s1.show()
+```
+
+Python internally does this:
+
+```python
+Student.show(s1)
+```
+
+So, `self` automatically becomes `s1`.
+
+---
+
+# 📌 Multiple Objects Example
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print(self.name)
+
+s1 = Student("Jai")
+s2 = Student("Rahul")
+
+s1.show()
+s2.show()
+```
+
+### Output
+
+```
+Jai
+Rahul
+```
+
+Each object has its own data.
+
+---
+
+# 📌 Accessing Variables Using `self`
+
+```python
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def details(self):
+        print(self.name)
+        print(self.salary)
+
+e1 = Employee("Amit", 50000)
+
+e1.details()
+```
+
+---
+
+# ❌ Without `self`
+
+```python
+class Student:
+
+    def __init__(self, name):
+        name = name
+```
+
+This does **not** create an object attribute.
+
+Correct:
+
+```python
+self.name = name
+```
+
+---
+
+# 📌 Accessing Methods Using `self`
+
+A method can call another method using `self`.
+
+```python
+class Demo:
+
+    def hello(self):
+        print("Hello")
+
+    def welcome(self):
+        self.hello()
+        print("Welcome")
+
+d = Demo()
+
+d.welcome()
+```
+
+### Output
+
+```
+Hello
+Welcome
+```
+
+---
+
+# 📌 Can We Use Another Name Instead of `self`?
+
+Yes.
+
+```python
+class Demo:
+
+    def __init__(myobject):
+        print("Hello")
+```
+
+This code works.
+
+But according to Python conventions (**PEP 8**), always use **`self`**.
+
+---
+
+# ❌ Common Mistakes
+
+### Mistake 1
+
+```python
+class Student:
+
+    def show():
+        print("Hello")
+```
+
+Correct
+
+```python
+class Student:
+
+    def show(self):
+        print("Hello")
+```
+
+---
+
+### Mistake 2
+
+```python
+name = name
+```
+
+Correct
+
+```python
+self.name = name
+```
+
+---
+
+### Mistake 3
+
+Trying to access object variables without `self`.
+
+Wrong
+
+```python
+print(name)
+```
+
+Correct
+
+```python
+print(self.name)
+```
+
+---
+
+# 💡 Interview Questions
+
+### Q1. What is `self`?
+
+`self` is a reference to the current object of a class.
+
+---
+
+### Q2. Is `self` a keyword?
+
+❌ No.
+
+It is **not** a Python keyword.
+
+It is only a naming convention.
+
+---
+
+### Q3. Who passes `self`?
+
+Python automatically passes the current object when a method is called.
+
+---
+
+### Q4. Can we change the name of `self`?
+
+Yes, but it is not recommended.
+
+Always use `self` for readability.
+
+---
+
+# 🏋 Practice Programs
+
+### Beginner
+
+- Student Class
+- Car Class
+- Mobile Class
+
+### Intermediate
+
+- Employee Details
+- Bank Account
+- Library Book Class
+
+### Advanced
+
+- School Management System
+- Hospital Management System
+- ATM Simulation
+
+---
+
+# 📝 Quick Revision
+
+- `self` refers to the current object.
+- It is the first parameter of instance methods.
+- Python passes `self` automatically.
+- Use `self.variable` to create object attributes.
+- Use `self.method()` to call another method in the same class.
+- `self` is **not** a keyword; it is a convention.
+
+---
+
+# 🧠 Key Takeaway
+
+Whenever you see:
+
+```python
+self.name = name
+```
+
+Remember:
+
+- Left side (`self.name`) → Object attribute
+- Right side (`name`) → Value passed by the user
+
+---
+
+# 🚀 What's Next?
+
+📌 **Topic 5 : Instance Variables & Class Variables**
+
+In the next topic, you'll learn:
+- Instance Variables
+- Class Variables
+- Difference between them
+- Real-world examples
+- Common mistakes
+- Interview questions
