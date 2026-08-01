@@ -1,0 +1,25 @@
+class bank_account :
+  def __init__ (self, balance ):
+    self. _balance = balance 
+  def show(self) :
+    print(f"balance is {self. balance}")
+    
+  @property
+  def balance (self):
+    return self._balance
+  @balance.setter 
+  def balance (self,  new_balance):
+     self._balance = new_balance
+     if self. balance< 0: 
+        print("balance is negative ")
+     elif self. balance == 0:
+        print("balance is invalid ")
+     else: 
+        print(self. balance )
+
+
+obj = bank_account(1000)
+obj.show()
+obj.balance= 9000
+
+obj.show()
