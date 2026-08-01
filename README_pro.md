@@ -179,3 +179,42 @@ b = int(a)
 ------------------------------------------------------------------------
 
 # 🔥 Made by Jai Kishan 😎
+# 🐍 Python 100 Days of Code
+## 📘 README Notes (Lecture 30–60)
+
+## Topics Covered
+- Virtual Environment
+- Object-Oriented Programming (OOP)
+- Classes and Objects
+- Constructors (__init__)
+- Instance & Class Variables
+- Methods
+- Inheritance
+- Encapsulation
+- Polymorphism
+- Operator Overloading
+- Static Methods
+- Class Methods
+- Magic (Dunder) Methods
+- Exception Handling
+- File Handling (Revision)
+- Modules & Packages
+- And related practice programs
+
+---
+
+## Classes and Objects
+
+### What is a Class?
+A class is a blueprint for creating objects.
+
+### Example
+
+```python
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def show(self):
+        print(self.name, self.marks)
