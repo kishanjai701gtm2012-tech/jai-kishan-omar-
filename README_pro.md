@@ -530,7 +530,339 @@ Because it automatically closes the file and prevents resource leaks.
 - `tell()` → Current cursor position
 - `truncate()` → Reduce file size
 - `with open()` → Best practice
+# 🐍 Python Master Notes
 
+# 📦 Topic 2 : Object-Oriented Programming (OOP)
+
+> **Object-Oriented Programming (OOP)** is a programming paradigm that organizes code using **classes** and **objects**. It makes programs more reusable, modular, and easier to maintain.
+
+---
+
+# 📖 What is OOP?
+
+OOP is a way of writing programs by representing real-world objects.
+
+Instead of writing everything in functions, we create **classes** and then create **objects** from those classes.
+
+### Real-Life Examples
+
+| Real World | Python |
+|------------|--------|
+| Car | Object |
+| Student | Object |
+| Mobile | Object |
+| Bank Account | Object |
+
+---
+
+# 🤔 Why OOP?
+
+Without OOP:
+- Code becomes repetitive.
+- Large projects become difficult to manage.
+- Reusability is low.
+
+With OOP:
+- ✅ Code Reusability
+- ✅ Better Organization
+- ✅ Easy Maintenance
+- ✅ Security
+- ✅ Easy to Understand
+
+---
+
+# 📚 Important Terms
+
+| Term | Meaning |
+|------|----------|
+| Class | Blueprint |
+| Object | Instance of a class |
+| Attribute | Variable inside a class |
+| Method | Function inside a class |
+
+---
+
+# 🏗 What is a Class?
+
+A **class** is a blueprint used to create objects.
+
+### Syntax
+
+```python
+class Student:
+    pass
+```
+
+Example
+
+```python
+class Student:
+    pass
+```
+
+---
+
+# 👤 What is an Object?
+
+An object is an instance of a class.
+
+```python
+class Student:
+    pass
+
+s1 = Student()
+s2 = Student()
+```
+
+Here,
+
+- `Student` → Class
+- `s1` → Object
+- `s2` → Object
+
+---
+
+# 🎯 Real Example
+
+```python
+class Student:
+    name = "Jai"
+    marks = 95
+
+s1 = Student()
+
+print(s1.name)
+print(s1.marks)
+```
+
+Output
+
+```
+Jai
+95
+```
+
+---
+
+# 📌 Attributes
+
+Attributes are variables that belong to a class or object.
+
+Example
+
+```python
+class Mobile:
+
+    brand = "Samsung"
+
+m1 = Mobile()
+
+print(m1.brand)
+```
+
+---
+
+# 📌 Methods
+
+Methods are functions inside a class.
+
+Example
+
+```python
+class Student:
+
+    def show(self):
+        print("Welcome")
+
+s1 = Student()
+
+s1.show()
+```
+
+Output
+
+```
+Welcome
+```
+
+---
+
+# 🌍 Real-Life Example
+
+```python
+class Car:
+
+    brand = "BMW"
+
+    def start(self):
+        print("Car Started")
+
+car1 = Car()
+
+print(car1.brand)
+
+car1.start()
+```
+
+Output
+
+```
+BMW
+Car Started
+```
+
+---
+
+# 📌 Advantages of OOP
+
+- Code Reusability
+- Better Security
+- Easy Debugging
+- Easy Maintenance
+- Better Structure
+- Real-World Modeling
+- Modular Programming
+
+---
+
+# 📂 OOP Pillars
+
+Python OOP has four major pillars:
+
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+
+These topics are covered separately in later notes.
+
+---
+
+# ❌ Common Mistakes
+
+### Mistake 1
+
+```python
+class Student
+
+    pass
+```
+
+Missing `:` after class name.
+
+---
+
+### Mistake 2
+
+```python
+class Student:
+    pass
+
+print(name)
+```
+
+Wrong.
+
+Correct
+
+```python
+s = Student()
+```
+
+---
+
+### Mistake 3
+
+Trying to call a method without an object.
+
+Wrong
+
+```python
+show()
+```
+
+Correct
+
+```python
+s.show()
+```
+
+---
+
+# 💡 Interview Questions
+
+### Q1. What is OOP?
+
+Object-Oriented Programming is a programming paradigm that uses classes and objects to organize code.
+
+---
+
+### Q2. What is a Class?
+
+A class is a blueprint used to create objects.
+
+---
+
+### Q3. What is an Object?
+
+An object is an instance of a class.
+
+---
+
+### Q4. Difference between Class and Object?
+
+| Class | Object |
+|--------|---------|
+| Blueprint | Real Instance |
+| Template | Actual Entity |
+| No Memory Until Object Exists | Uses Memory |
+
+---
+
+# 🏋 Practice Programs
+
+### Easy
+
+- Student Class
+- Mobile Class
+- Car Class
+
+### Medium
+
+- Employee Class
+- Bank Account Class
+- Laptop Class
+
+### Advanced
+
+- Library Management System
+- School Management System
+- Hospital Management System
+
+---
+
+# 📝 Quick Revision
+
+- OOP = Object-Oriented Programming
+- Class = Blueprint
+- Object = Instance of a Class
+- Attribute = Variable
+- Method = Function inside a class
+- OOP makes code reusable and organized.
+- Objects are created using classes.
+
+---
+
+# 🚀 What's Next?
+
+📌 **Topic 3 : Constructor (`__init__`)**
+
+In the next notes, you'll learn:
+- What is a constructor?
+- Why `__init__()` is used
+- What is `self`?
+- How objects are initialized
+- Constructor examples and interview questions
 ---
 
 # 🎯 Summary
@@ -539,7 +871,369 @@ File Handling is one of the most important Python topics. It is used in almost e
 class Student:
     def __init__(self, name, marks):
         self.name = name
+        self.marks = marks# 🐍 Python Master Notes
+
+# 🏗️ Topic 3 : Constructor (`__init__()`)
+
+> **A constructor is a special method that is automatically called whenever an object of a class is created.**
+
+---
+
+# 📖 What is a Constructor?
+
+A **constructor** is a special method in Python that initializes an object.
+
+In Python, the constructor is written as:
+
+```python
+__init__()
+```
+
+It is automatically executed when an object is created.
+
+---
+
+# 🤔 Why Do We Use Constructors?
+
+Without a constructor, we have to assign values manually.
+
+Example (Without Constructor)
+
+```python
+class Student:
+    pass
+
+s1 = Student()
+
+s1.name = "Jai"
+s1.age = 16
+
+print(s1.name)
+print(s1.age)
+```
+
+This works, but it becomes difficult when there are many objects.
+
+Using a constructor makes the code cleaner and more efficient.
+
+---
+
+# 📌 Syntax
+
+```python
+class ClassName:
+
+    def __init__(self):
+        # Initialization Code
+```
+
+---
+
+# ✅ Simple Constructor
+
+```python
+class Student:
+
+    def __init__(self):
+        print("Object Created")
+
+s1 = Student()
+```
+
+### Output
+
+```
+Object Created
+```
+
+The `__init__()` method is called automatically when `Student()` is executed.
+
+---
+
+# 📌 Constructor with Parameters
+
+```python
+class Student:
+
+    def __init__(self, name, marks):
+        self.name = name
         self.marks = marks
+
+s1 = Student("Jai", 95)
+
+print(s1.name)
+print(s1.marks)
+```
+
+### Output
+
+```
+Jai
+95
+```
+
+---
+
+# 📌 What is `self`?
+
+`self` refers to the **current object**.
+
+It allows us to access the attributes and methods of the object.
+
+Example
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Jai")
+
+print(s1.name)
+```
+
+Here,
+
+- `self.name` → Attribute of the current object
+- `"Jai"` → Value passed while creating the object
+
+---
+
+# 📌 Multiple Objects
+
+```python
+class Student:
+
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+s1 = Student("Jai", 90)
+s2 = Student("Rahul", 85)
+
+print(s1.name, s1.marks)
+print(s2.name, s2.marks)
+```
+
+### Output
+
+```
+Jai 90
+Rahul 85
+```
+
+Each object stores its own data independently.
+
+---
+
+# 📌 Adding Methods
+
+```python
+class Student:
+
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def show(self):
+        print(self.name, self.marks)
+
+s1 = Student("Jai", 95)
+
+s1.show()
+```
+
+### Output
+
+```
+Jai 95
+```
+
+---
+
+# 🌍 Real-Life Example
+
+```python
+class Mobile:
+
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+
+    def details(self):
+        print("Brand :", self.brand)
+        print("Price :", self.price)
+
+m1 = Mobile("Samsung", 25000)
+
+m1.details()
+```
+
+### Output
+
+```
+Brand : Samsung
+Price : 25000
+```
+
+---
+
+# 📌 Types of Constructors
+
+## 1. Default Constructor
+
+```python
+class Demo:
+
+    def __init__(self):
+        print("Hello")
+```
+
+No extra arguments are passed.
+
+---
+
+## 2. Parameterized Constructor
+
+```python
+class Demo:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+Values are passed while creating the object.
+
+---
+
+# ❌ Common Mistakes
+
+### Missing `self`
+
+❌ Wrong
+
+```python
+class Student:
+
+    def __init__(name):
+        pass
+```
+
+✅ Correct
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+---
+
+### Forgetting `self`
+
+❌ Wrong
+
+```python
+name = name
+```
+
+✅ Correct
+
+```python
+self.name = name
+```
+
+---
+
+### Wrong Number of Arguments
+
+```python
+Student()
+```
+
+If the constructor expects parameters, Python raises a `TypeError`.
+
+---
+
+# 💡 Interview Questions
+
+### Q1. What is a constructor?
+
+A constructor is a special method that automatically runs when an object is created.
+
+---
+
+### Q2. What is the name of the constructor in Python?
+
+```python
+__init__()
+```
+
+---
+
+### Q3. Is calling `__init__()` manually necessary?
+
+No. Python calls it automatically when an object is created.
+
+---
+
+### Q4. What is `self`?
+
+`self` is a reference to the current object of the class.
+
+---
+
+### Q5. Can a class exist without a constructor?
+
+Yes. Python provides a default constructor if you don't define one.
+
+---
+
+# 🏋 Practice Programs
+
+### Beginner
+
+- Student Class
+- Mobile Class
+- Car Class
+
+### Intermediate
+
+- Employee Details
+- Bank Account
+- Laptop Information
+
+### Advanced
+
+- Library Management System
+- School Management System
+- ATM Simulation
+
+---
+
+# 📝 Quick Revision
+
+- `__init__()` is a constructor.
+- It runs automatically when an object is created.
+- `self` refers to the current object.
+- Constructors initialize object data.
+- Constructors can be default or parameterized.
+- Use `self.variable = value` to create object attributes.
+
+---
+
+# 🚀 What's Next?
+
+📌 **Topic 4 : `self` Keyword**
+
+In the next topic, we'll understand:
+- Why `self` is required
+- How Python passes `self` automatically
+- `self` vs normal variables
+- Common mistakes with `self`
+- Interview questions and examples
 
     def show(self):
         print(self.name, self.marks)
