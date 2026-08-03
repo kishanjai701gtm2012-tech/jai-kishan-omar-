@@ -1,0 +1,13 @@
+class employee : 
+  def __init__ (self,name,department, sellery ):
+    self.name=name
+    self._department =department
+    self.__sellery = sellery 
+  def show (self):
+    print(self.name)
+    print(self._department)
+    print(self.__sellery )
+obj= employee ("ram", "programmar ", 100000)
+obj.show()
+print(obj._employee__sellery)
+  
