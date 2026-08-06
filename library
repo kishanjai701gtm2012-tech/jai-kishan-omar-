@@ -1,0 +1,25 @@
+class library : 
+  def __init__ (self, book_name): 
+    self.book = book_name
+    self.books = []
+    self.books.append(self.book)
+    print("your book name",  self.book)
+   
+  def add (self,book_name):
+     self.books .append(book_name)
+     print("your book added succesfully")
+
+  def count_book (self):
+     return len(self.books)
+
+
+
+obj = library("Python")
+obj.add("java")
+obj.count_book()
+print(obj.count_book())
+  
+    
+    
+    
+   
