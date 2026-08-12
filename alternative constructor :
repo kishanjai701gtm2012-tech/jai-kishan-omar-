@@ -1,0 +1,21 @@
+class student : 
+  def __init__(self, name , fees ):
+    self.name = name 
+    self.fees = fees 
+
+
+  
+  @classmethod
+  def fromstr(cls,string):
+    return cls(string.split("-")[0],int(string.split("-")[1]))
+
+
+
+a1 = student("jay", 1000)
+print(a1.name )
+print(a1.fees)
+
+a2 = student.fromstr ("jai - 1000")
+print(a2.name)
+print(a2.fees)
+  
