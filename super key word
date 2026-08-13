@@ -1,0 +1,20 @@
+class student : 
+  def __init__ (self,  name, age ):
+    self.name = name 
+    self.age = age 
+
+class teacher (student):
+  def __init__(self,name,age, subject ):
+    super().__init__(name,age)
+    self.subject = subject 
+
+
+
+jai = student("jai",12)
+print(jai.name)
+
+rahul = teacher("jai ", 22, "maths")
+print(rahul.name)
+
+print(rahul.age)
+  
