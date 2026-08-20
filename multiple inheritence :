@@ -1,0 +1,25 @@
+class employee : 
+  def __init__ (self,name):
+    self.name = name
+  def show (self):
+    print(f"the name of employee is {self.name}")
+class dancer :
+  def __init__(self,dance):
+    self.dance = dance 
+  def show (self):
+    print(f"the name of dance is {self.dance}")
+
+class Employee_dancer (dancer,employee):
+  def __init__(self,name,dance):
+    self.name = name 
+    self.dance = dance 
+
+
+a = Employee_dancer("kishan",'kathak')
+print(a.name)
+print(a.dance)
+a.show()
+print(Employee_dancer.mro())
+  
+  
+  
