@@ -1,0 +1,40 @@
+class Animal : 
+  def __init__(self,name,varraity):
+    self.name = name 
+    self.varraity = varraity 
+
+  def show (self):
+    print(f"the name is {self.name} and varraity is {self.varraity}")
+
+class goat(Animal):
+  def __init__(self,name,colour):
+    Animal.__init__(self,name,varraity= "goat")
+    
+    self.colour = colour
+  def show (self):
+    print(f"the colour of {self.varraity} is {self.colour} ")
+    Animal.show(self)
+
+class figure (goat):
+  def __init__(self,name,figure):
+    goat.__init__(self,name,colour= "figure")
+    self.figure= figure 
+
+  def show (self):
+    print(f"the figure is {self.figure}")
+    goat.show(self)
+
+
+
+ajay = Animal("tommy","dog")
+ajay.show()
+dog = goat("tommmy","brown")
+dog.show()
+dog = figure("tommmy","thin")
+dog.show()
+
+
+ 
+
+
+  
