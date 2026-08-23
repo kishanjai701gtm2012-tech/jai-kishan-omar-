@@ -1,0 +1,17 @@
+from gtts import gTTS
+import os
+
+clients = ["raghav", "rakesh", "raman", "hareesh", "madhav"]
+
+# Har ek client ke liye loop chalega
+for client in clients:
+    text = f"shout out to {client}"
+    print(text)
+    
+    # Audio generate karein (English language ke liye)
+    tts = gTTS(text=text, lang='en')
+    
+    # Har client ki audio file alag naam se save hogi
+    filename = f"{client}.mp3"
+    tts.save(filename)
+    print(f"--> {filename} save ho gayi hai.")
