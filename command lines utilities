@@ -1,0 +1,14 @@
+#isko ham shell me use karenge 
+
+import sys 
+
+
+print(sys.argv)
+add = (int(sys.argv[1]) + int(sys.argv[2]))
+subs = (int(sys.argv[1]) - int(sys.argv[2]))
+devide = (int(sys.argv[1]) / int(sys.argv[2]))
+mult = (int(sys.argv[1]) * int(sys.argv[2]))
+print("add",add)
+print("subs",subs)
+print("devide",devide)
+print("mult",mult)
